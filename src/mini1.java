@@ -115,7 +115,7 @@ public class mini1 {
         return frame;
     }
 
-    //(majoritairement copié d'internet)
+    // Methode d'affichage de la matrice
     static void Afficher(int[][] tableau, int ligne, int colonne, JFrame frame) {
         JPanel panel = new JPanel(new GridLayout(0,colonne));
 
