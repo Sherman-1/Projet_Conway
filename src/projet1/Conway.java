@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-public class mini1 {
+public class Conway {
     public static void main(String[] args) throws InterruptedException {
         int ligne = 20, colonne = 20;
 
