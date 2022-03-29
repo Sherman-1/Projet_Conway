@@ -1,22 +1,22 @@
 # Projet_Conway
 
-##Architecture
-### Dossier out
+### Architecture
+**Dossier out**
 
 
-### Dossier SRC
-####JeuDeLaVie
+**Dossier SRC**
+1. JeuDeLaVie
 Ce fichier contient ...
 
-####Individu
+2. Individu
 ...
 
-####Pandemie
+3. Pandemie
 ...
 
-##Installation
-###Sur IntelliJ
+### Installation
+**Sur IntelliJ**
 ...
 
-###Sur la console
+**Sur la console**
 ...
