@@ -1,0 +1,132 @@
+package projet1;
+import java.util.Random;
+
+public class Structures {
+    public void Structuresaleatoires(int[][] tab, int x, int y) {
+        int[] l = tab[0];
+        int cal = 0;
+        for (int elem : l) {
+            cal = cal + 1;
+        }
+        int tab1[][] = new int[cal][cal];
+        for (int i = 0; i < 20; i++) {
+            for (int z = 0; z < 20; z++) {
+                Random random = new Random();
+                int n;
+                n = random.nextInt(2);
+                tab[x + i][y + z] = n;
+            }
+        }
+    }
+
+    public void planeur(int[][] tab, int x, int y) {
+        tab[x + 0][y + 1] = 1;
+        tab[x + 1][y + 2] = 1;
+        tab[x + 2][y + 0] = 1;
+        tab[x + 2][y + 1] = 1;
+        tab[x + 2][y + 2] = 1;
+    }
+
+    public void planeurinverse(int[][] tab, int x, int y) {
+        tab[x + 0][y - 1] = 1;
+        tab[x - 1][y - 2] = 1;
+        tab[x - 2][y - 0] = 1;
+        tab[x - 2][y - 1] = 1;
+        tab[x - 2][y - 2] = 1;
+    }
+
+    public void clown(int[][] tab, int x, int y) {
+
+        tab[x][y] = 1;
+        tab[x][y - 1] = 1;
+        tab[x][y - 2] = 1;
+        tab[x + 1][y - 2] = 1;
+        tab[x + 2][y - 2] = 1;
+        tab[x + 2][y - 1] = 1;
+        tab[x + 2][y] = 1;
+
+    }
+
+
+    public void infinie(int[][] tab, int x, int y) {
+
+        tab[x][y] = 1;
+        tab[x + 2][y] = 1;
+        tab[x + 2][y + 1] = 1;
+        tab[x + 4][y + 2] = 1;
+        tab[x + 4][y + 3] = 1;
+        tab[x + 4][y + 4] = 1;
+        tab[x + 6][y + 3] = 1;
+        tab[x + 6][y + 4] = 1;
+        tab[x + 6][y + 5] = 1;
+        tab[x + 7][y + 4] = 1;
+    }
+
+    public void Sdix(int[][] tab, int x, int y) {
+
+        tab[x + 1][y] = 1;
+        tab[x + 2][y] = 1;
+        tab[x + 3][y] = 1;
+        tab[x + 4][y] = 1;
+        tab[x + 5][y] = 1;
+        tab[x + 6][y] = 1;
+        tab[x + 7][y] = 1;
+        tab[x + 8][y] = 1;
+        tab[x + 9][y] = 1;
+        tab[x + 10][y] = 1;
+    }
+
+    public void canon(int[][] tab, int x, int y) {
+
+        tab[x][y] = 1;
+        tab[x][y - 1] = 1;
+        tab[x + 1][y] = 1;
+        tab[x + 1][y - 1] = 1;
+
+        tab[x + 10][y + 1] = 1;
+        tab[x + 10][y] = 1;
+        tab[x + 10][y - 1] = 1;
+
+        tab[x + 11][y + 2] = 1;
+        tab[x + 11][y - 2] = 1;
+
+        tab[x + 12][y + 3] = 1;
+        tab[x + 12][y - 3] = 1;
+
+        tab[x + 13][y + 3] = 1;
+        tab[x + 13][y - 3] = 1;
+
+        tab[x + 14][y] = 1;
+
+        tab[x + 15][y + 2] = 1;
+        tab[x + 15][y - 2] = 1;
+
+        tab[x + 16][y + 1] = 1;
+        tab[x + 16][y] = 1;
+        tab[x + 16][y - 1] = 1;
+
+        tab[x + 17][y] = 1;
+
+        tab[x + 20][y - 1] = 1;
+        tab[x + 20][y - 2] = 1;
+        tab[x + 20][y - 3] = 1;
+
+        tab[x + 21][y - 1] = 1;
+        tab[x + 21][y - 2] = 1;
+        tab[x + 21][y - 3] = 1;
+
+        tab[x + 22][y] = 1;
+        tab[x + 22][y - 4] = 1;
+
+        tab[x + 24][y + 1] = 1;
+        tab[x + 24][y] = 1;
+        tab[x + 24][y - 4] = 1;
+        tab[x + 24][y - 5] = 1;
+
+        tab[x + 34][y - 2] = 1;
+        tab[x + 34][y - 3] = 1;
+        tab[x + 35][y - 2] = 1;
+        tab[x + 35][y - 3] = 1;
+    }
+
+}
